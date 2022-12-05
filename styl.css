@@ -2,17 +2,21 @@
 *{
     padding: 0;
     margin: 0;
-    background-color:indigo;
+    background-color:aliceblue;
 }
 body{
     font-family: Arial, sans-serif;
     font-size: 15px;
+}
+.bc{
+    background-color: black;
 }
 h1{
     border: 5px solid green;
     font-size: 45px;
     color: #008000 ;
     font-weight: bolder;
+    background-color: black;
     
 }
 div nav{
@@ -20,15 +24,7 @@ div nav{
     margin-bottom: 60px;
     
 }
-#B{
-    color: azure;
-}
-#L{
-    color: azure;
-}
-#P{
-    color:azure;
-}
+
 div nav{
     float: right;
     
@@ -98,8 +94,18 @@ p{
 #walter{
     border-radius: 50%;
 }
+#Reservation{
+    margin-top: auto;
+    
 
 
 
 
- 
+}
+#découverte{
+   background-image: url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg);
+
+
+
+
+}
