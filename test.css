@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color:aliceblue;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    
+}
+
+.bc{
+    background-color: black;
+}
+h1{
+    border: 5px solid green;
+    font-size: 45px;
+    color: #008000 ;
+    font-weight: bolder;
+    background-color: black;
+    
+}
+div nav{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    
+}
+
+div nav{
+    float: right;
+    
+}
+div{
+    height: 100px;
+  
+}
+.bc h1{
+    float: left;
+    margin-top: 32px;
+}
+.bc ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.bc li{
+    margin-right: 15px;
+}
+h2{
+    font-size: 24px;
+    color: #008000;
+    
+
+
+
+}
+p{
+    line-height: 30px;
+    color: blanchedalmond;
+
+
+
+}
+#découverte h2:hover{
+    margin-bottom: 20px;
+    background-color: black;
+
+
+
+}
+#découverte p{
+
+}
+
+#découverte ul{
+    
+
+
+}
+#découverte ul li{
+    width: 300px;
+    float: left;
+    padding-top: 70px;
+    padding-left: 250px;
+
+
+}
+#jesse{
+    border-radius: 50%;
+    
+}
+#walter{
+    border-radius: 50%;
+}
+#Reservation{
+    margin-top: auto;
+    
+
+
+
+
+}
+#découverte{
+   background-image: url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg);
+
+
+
+
+}
