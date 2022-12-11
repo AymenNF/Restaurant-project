@@ -55,3 +55,19 @@
     box-shadow: inset -15px 0 #c15711;
     border-radius: 0 0 30px 30px;
   }
+
+#buttons{
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  border-radius: 30px;
+  }
+
+  #mot{
+  position: fixed;
+  top: 50px;
+  left: 100px;
+  width: 300px;
+
+  }
