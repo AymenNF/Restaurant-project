@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="script" href="script.js">
     <link rel="stylesheet" href="styl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
         <div class="bc">
         <h1><span id="B">B</span>ienvenue à <span id="B">L</span>os <span id="B">P</span>ollos</h1>
          <nav>
-            <ul>
+            <ul class="men">
                 <li><a href="découverte">  Découvrez </a></li>
                 <li><a href="reservation">  Reservez </a></li>
                 <li><a href="menu">  Menu </a></li>
@@ -38,7 +39,8 @@
 
     <section id="découverte">
         <div class="cate">
-            <ul>
+            
+            <ul class="opa" >
                 <li id="step1"><h2>Innovation</h2>
                     <img id="jesse" src="https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png" alt="jesse">  
                    <p> Vivez une expérience unique dans notre restaurant</p> </li>
@@ -54,7 +56,6 @@
 
 
 
-            </ul>
 
 
 
@@ -65,39 +66,44 @@
         </div>
 
 
+</ul>
 
 
 
 
 
 
+    </section> 
+       
 
-    </section>    
-<section id="Reservation" >
-    <div class="RES">
-    <h3>Réservez votre table ici</h3>
-    <div class="resernom">
+<section id="menu">
+    <div class="menuu">
+    <h4>Menu</h4>
+    <ul class="header" >
+        <li class="li"> Entrée<ul><li> Salade niçoise</li>
+            <li>Salade walter junior</li>
+            <li>Taktouka </li>
+            <li> Hommous</li>
+            </ul></li>
         
-        <label for="nom">Nom:</label>
-        <input id="nom" type="text" name="nom">
-       </div>
-
-    <div class="num de tele">
-        <label for="num de télephone">Num de télephone</label>
-        <input id="num de télephone" type="text" name="num de téléphone">
-
-
-
-    </div>
-    <input type="submit" value="valider">
-    </div>
-
-
-
-
+        <li class="li">Plat principal
+            <ul><li>jesse burger</li>
+                <li>poulet gratinné</li>
+                <li>shawarma</li>
+                <li>Tagine</li>
+                </ul>
+                </li>
+        <li class="li">Dessert
+            <ul><li >pudding</li>
+            <li>milkshake walter</li>
+            <li>mohalabia</li>
+            <li>gateau</li>
+            
+            
+            </ul>
 
 
-
+        </li>
 
 
 
@@ -106,8 +112,72 @@
 
 
 
+            
 
-</section>  
+
+
+
+
+        </li>    
+
+
+
+    </ul>   
+
+
+
+    </ul>
+    
+
+   
+
+
+</div>
+   </div> 
+
+
+
+
+
+
+
+
+
+</section>
+
+
+            
+<div class="RES">
+<h3 class="reserve">Réservez votre table ici</h3>
+    <ul class="aut">
+
+    <li class="blue"><label class="lab" for="nom">Nom:</label>
+    <input class="in" id="nom" type="text" name="nom"></li>
+
+    <li class="blue"><label class="lab" for="num de télephone">Num de télephone</label>
+    <input class="in" id="num de télephone" type="text" name="num de téléphone"><li>
+    <li class="blue"><label class="lab" for="num de télephone">TEMPS</label>
+        <input class="in" id="num de télephone" type="text" name="num de téléphone"><li>    
+
+<li class="blue" ><input class="sub" type="submit" value="valider"></li>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
     
 

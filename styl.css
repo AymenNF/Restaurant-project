@@ -1,6 +1,6 @@
 
 *{
-    padding: 0;
+    
     margin: 0;
     background-color:aliceblue;
 }
@@ -37,7 +37,7 @@ div{
     float: left;
     margin-top: 32px;
 }
-.bc ul li {
+.bc .men li {
     display: inline-block;
     text-transform: uppercase;
 }
@@ -54,11 +54,11 @@ h2{
     
 
 
-
+/*partie2*/
 }
 p{
     line-height: 30px;
-    color: blanchedalmond;
+    color: green;
 
 
 
@@ -70,20 +70,13 @@ p{
 
 
 }
-#découverte p{
-
-}
-
-#découverte ul{
-    
 
 
-}
+
 #découverte ul li{
     width: 300px;
     float: left;
-    padding-top: 70px;
-    padding-left: 250px;
+    
 
 
 }
@@ -102,12 +95,89 @@ p{
 
 
 }
-#découverte{
-    padding: 70px;
-    border: 1px solid #4caf4c;
+.cate{
+    background-color: black;
+    height: 730px;
+    background-image: url(ch.png);
+    background-size:cover;
+
+
+}
+#step1{
+    background-color:transparent;
+    
+}
+#step2{
+    background-color: transparent;
+    
+}
+.RES{
+    float: center;
+    height: 200px;
+  
+    background-color: blue;
+    
+}
+.aut li{
+    background-color: blue;
+    display:  block;
+    
+
+
+}
+.blue{
+    margin-top: 15px;
+    
+}
+.reserve{
+    background-color: transparent;
+    font-size: 30px;
+
+}
+.reserve:hover{
+    background-color: blue;
 }
 
-#Réservation{
-    padding: 70px;
-    border: 1px solid #4caf4c;
+.RES .aut .blue{
+    background-color: blue;
 }
+
+.aut{
+    background-color: blue;
+    padding-top: 40px;
+    padding-left: 40%;
+    font-size: 25px;
+}
+ .sub:hover{
+    background-color: gray;
+
+}
+.menuu{
+    height: 400px;
+    
+
+}
+h4{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.li {
+    display: inline-block;
+    font-size: 25px;
+    float: left;
+    
+}
+.li ul li{
+    padding-top: 50px;
+}
+.li ul{
+    color: blue;
+}
+
+
+
+
+
+
+
+
