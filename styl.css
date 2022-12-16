@@ -56,12 +56,24 @@ h2{
 
 /*partie2*/
 }
+.header :hover {
+    background-color: red;
+
+}
+.menuu ul li:hover {
+    background-color: #003334;
+}
 p{
     line-height: 30px;
     color: green;
 
 
 
+}
+
+ .li.checked {
+    color: #2037cb;
+    text-decoration: line-through;
 }
 #découverte h2:hover{
     margin-bottom: 20px;
@@ -154,12 +166,21 @@ p{
 }
 .menuu{
     height: 400px;
+    background-color: #888;    
     
-
 }
+
 h4{
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #888;
+
+}
+.menuu ul{
+    background-color: #888;
+}
+.menuu ul li{
+    background-color: #888;
 }
 .li {
     display: inline-block;
@@ -167,8 +188,11 @@ h4{
     float: left;
     
 }
+.li ::before :checked{
+    background-color: #008000;
+} 
 .li ul li{
-    padding-top: 50px;
+    padding: 25px 0;
 }
 .li ul{
     color: blue;
