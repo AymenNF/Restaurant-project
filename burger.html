@@ -7,27 +7,26 @@
 <body>
   <h4 id="mot">Personnalisez votre burger</h4>
   <div id="buttons">
-    <button>bread-top</button>
+    <button onclick="startDrag(top)">bread-top</button>
     <br><br>
-    <button>salade</button>
+    <button onclick="startDrag(salade)">salade</button>
     <br><br>
-    <button>meat</button>
+    <button onclick="startDrag(meat)">meat</button>
     <br><br>
-    <button>cheese</button>
+    <button onclick="startDrag(cheese)">cheese</button>
     <br><br>
-    <button>tomato</button>
+    <button onclick="startDrag(tomato)">tomato</button>
     <br><br>
-    <button>bread-bottom</button>
+    <button onclick="startDrag(bottom)">bread-bottom</button>
   </div>
   
-<div class="box">
-  <div class="bread-top">
-  </div>
-  <div class="salade"></div>
-  <div class="tomato"></div>
-  <div class="cheese"></div>
-  <div class="meat"></div>
-  <div class="bread-bottom"></div>
+<div class="box" >
+  <div id="bread-top"></div>
+  <div id="salade"></div>
+  <div id="tomato"></div>
+  <div id="cheese"></div>
+  <div id="meat"></div>
+  <div id="bread-bottom"></div>
 </div>
 </body>
 </html>
