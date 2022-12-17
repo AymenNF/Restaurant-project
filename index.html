@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <link rel="stylesheet" href="styl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./script.js" defer> </script>
     <link rel="icon" href="Los_Pollos (1).jpg">
-    <link rel="php" href="index.php">
     <title>
         Los Pollos
     </title>
@@ -17,9 +14,9 @@
 
   
         <div class="bc">
-        <h1><span id="B">B</span>ienvenue à <span id="B">L</span>os <span id="B">P</span>ollos</h1>
+        <h1><span id="B">B</span>ienvenue à <span id="L">L</span>os <span id="P">P</span>ollos</h1>
          <nav>
-            <ul class="men">
+            <ul>
                 <li><a href="découverte">  Découvrez </a></li>
                 <li><a href="reservation">  Reservez </a></li>
                 <li><a href="menu">  Menu </a></li>
@@ -36,28 +33,25 @@
 
         
     </header>
-
-
-
     <section id="découverte">
         <div class="cate">
-            
-            <ul class="opa" >
+            <ul>
                 <li id="step1"><h2>Innovation</h2>
                     <img id="jesse" src="https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png" alt="jesse">  
                    <p> Vivez une expérience unique dans notre restaurant</p> </li>
-                <li id="step2">
-                    <h2>Créativité</h2>
+                <li>
+                    <h2 id="step2">Créativité</h2>
                     <img id="walter" src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="walter">
                     
                    <p> Dégustez nos burgers inspirés de la fameuse série Breaking bad </p>
                 </li>    
-                
 
 
 
 
 
+
+            </ul>
 
 
 
@@ -68,149 +62,32 @@
         </div>
 
 
-</ul>
 
 
 
 
 
 
-    </section> 
-       
 
-
-    <div class="menuu">
-    <h4>Menu</h4>
-    <ul class="header" >
-        <li class="li"> Entrée<ul><li> Salade niçoise</li>
-            <li>Salade walter junior</li>
-            <li>Taktouka </li>
-            <li> Hommous</li>
-            </ul></li>
-        
-        <li class="li">Plat principal
-            <ul><li>jesse burger</li>
-                <li>poulet gratinné</li>
-                <li>shawarma</li>
-                <li>Tagine</li>
-                </ul>
-                </li>
-        <li class="li">Dessert
-            <ul><li >pudding</li>
-            <li>milkshake walter</li>
-            <li>mohalabia</li>
-            <li>gateau</li>
-            
-            
-            </ul>
-
-
-        </li>
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-           
-
-
-
-    </ul>   
-
-
-
-    
-    
-
-   
-
-
-</div>
- 
-
-
-
-
-
-            
-<div class="RES"> 
-<h3 class="reserve">Réservez votre table ici</h3>
-    <ul class="aut">
-
-    <li class="blue"><label class="lab" for="nom">Nom:</label>
-    <input class="in" id="nom" type="text" name="nom"></li>
-
-    <li class="blue"><label class="lab" for="num de télephone">Num de télephone</label>
-    <input class="in" id="num de télephone" type="text" name="num de téléphone"><li>
-    <li class="blue"><label class="lab" for="num de télephone">TEMPS</label>
-        <input class="in" id="num de télephone" type="text" name="num de téléphone"><li>    
-
-<li class="blue" ><input class="sub" type="submit" value="valider"></li>
-<p class="Merci">Merci,Votre réservation est bien enregistrée</p>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
+    </section>    
+<section id="Reservation" >
+    <form action="/action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Réservez votre table ici</h1>
+          
+          <hr>
+      
+          <label for="text"><b>Nom et Prénom</b></label>
+          <input type="text" placeholder="Nom et Prénom" name="text" required>
+      
+          <label for="text"><b>Num de téléphone</b></label>
+          <input type="text" placeholder="Num de téléphone" name="text" required>
+          
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Annuler</button>
+            <button type="submit" class="signupbtn">Réserver</button>
+          </div>
+        </div>
+      </form>
+</section>  
