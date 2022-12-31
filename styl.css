@@ -123,36 +123,9 @@ p{
     background-color: transparent;
     
 }
-.RES{
-    float: center;
-    height: 200px;
-  
-    background-color: blue;
-    
-}
-.aut li{
-    background-color: blue;
-    display:  block;
-    
 
 
-}
-.blue{
-    margin-top: 15px;
-    
-}
-.reserve{
-    background-color: transparent;
-    font-size: 30px;
 
-}
-.reserve:hover{
-    background-color: blue;
-}
-
-.RES .aut .blue{
-    background-color: blue;
-}
 
 .aut{
     background-color: blue;
@@ -166,21 +139,21 @@ p{
 }
 .menuu{
     height: 400px;
-    background-color: #888;    
+    background-color: black;    
     
 }
 
 h4{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif; 
-    background-color: #888;
+    background-color: black;
 
 }
 .menuu ul{
-    background-color: #888;
+    background-color: black;
 }
 .menuu ul li{
-    background-color: #888;
+    background-color: black;
 }
 .li {
     display: inline-block;
@@ -197,8 +170,8 @@ h4{
 .li ul{
     color: blue;
 }
-
- input[type=text] {
+#partie3
+input[type=text] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -216,7 +189,7 @@ h4{
   
 
   button {
-    background-color: #04AA6D;
+    background-color: #04aa6d4b;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -252,12 +225,30 @@ h4{
     clear: both;
     display: table;
   }
-  
- 
-
-
-
-
-
+h4{
+    color: #f1f1f1 ;
+}
+.Entrée{
+    display: none;
+    background-color: brown;}
+.Menuprinci{
+    display: none;
+    background-color: brown;}
+.Dessert{
+    display: none;
+    background-color: brown;
+}
+.dropbtn:hover+.Entrée{
+    display: block;
+    
+}
+.dropbtn:hover+.Dessert{
+    display: block;
+    
+}
+.dropbtn:hover+.Menuprinci{
+    display: block;
+    
+}
 
 

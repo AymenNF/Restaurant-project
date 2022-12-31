@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <link rel="stylesheet" href="styl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./script.js" defer> </script>
+    <script type="text/javascript" src="database.js" defer> </script>
     <link rel="icon" href="Los_Pollos (1).jpg">
+    
     <title>
         Los Pollos
     </title>
@@ -14,9 +18,9 @@
 
   
         <div class="bc">
-        <h1><span id="B">B</span>ienvenue à <span id="L">L</span>os <span id="P">P</span>ollos</h1>
+        <h1><span id="B">B</span>ienvenue à <span id="B">L</span>os <span id="B">P</span>ollos</h1>
          <nav>
-            <ul>
+            <ul class="men">
                 <li><a href="découverte">  Découvrez </a></li>
                 <li><a href="reservation">  Reservez </a></li>
                 <li><a href="menu">  Menu </a></li>
@@ -33,25 +37,28 @@
 
         
     </header>
+
+
+
     <section id="découverte">
         <div class="cate">
-            <ul>
+            
+            <ul class="opa" >
                 <li id="step1"><h2>Innovation</h2>
                     <img id="jesse" src="https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png" alt="jesse">  
                    <p> Vivez une expérience unique dans notre restaurant</p> </li>
-                <li>
-                    <h2 id="step2">Créativité</h2>
+                <li id="step2">
+                    <h2>Créativité</h2>
                     <img id="walter" src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="walter">
                     
                    <p> Dégustez nos burgers inspirés de la fameuse série Breaking bad </p>
                 </li>    
+                
 
 
 
 
 
-
-            </ul>
 
 
 
@@ -62,14 +69,51 @@
         </div>
 
 
+</ul>
 
 
 
 
 
 
+    </section> 
+       
 
-    </section>    
+
+    <div class="menuu">
+    <h4>Menu</h4>
+    <button  class="dropbtn">Entrée</button>
+    <div class="Entrée">
+    
+    <p>Salade</p>
+    <p>Salade walter junior</p>
+    <p>pudding</p>
+   </div>
+    <button  class="dropbtn">Menu Principal</button>
+   <div class="Menuprinci">
+   
+    <p>poulet gratinné</p>
+    <p> shawarma</p>
+    <p>Tagine</p>
+
+   </div>
+   <button  class="dropbtn">Dessert</button>
+  <div class="Dessert">
+    
+    <p>Coca</p>
+    <p>Mohalabia</p>
+    <p>tarte</p>
+
+
+
+
+  </div>
+
+
+
+
+</div>
+            
 <section id="Reservation" >
     <form action="/action_page.php" style="border:1px solid #ccc">
         <div class="container">
@@ -77,10 +121,10 @@
           
           <hr>
       
-          <label for="text"><b>Nom et Prénom</b></label>
+          <label for="name"><b>Nom et Prénom</b></label>
           <input type="text" placeholder="Nom et Prénom" name="text" required>
       
-          <label for="text"><b>Num de téléphone</b></label>
+          <label for="phone"><b>Num de téléphone</b></label>
           <input type="text" placeholder="Num de téléphone" name="text" required>
           
       
@@ -91,3 +135,61 @@
         </div>
       </form>
 </section>  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
