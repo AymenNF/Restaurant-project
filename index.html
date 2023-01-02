@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./script.js" defer> </script>
-    <script type="text/javascript" src="database.js" defer> </script>
+    
     <link rel="icon" href="Los_Pollos (1).jpg">
     
     <title>
@@ -115,16 +115,16 @@
 </div>
             
 <section id="Reservation" >
-    <form action="/action_page.php" style="border:1px solid #ccc">
+    <form action="/process-form" method="post" style="border:1px solid #ccc">
         <div class="container">
           <h1>Réservez votre table ici</h1>
           
           <hr>
-      
-          <label for="name"><b>Nom et Prénom</b></label>
+        
+          <label for="nom"><b>Nom et Prénom</b></label>
           <input type="text" placeholder="Nom et Prénom" name="text" required>
       
-          <label for="phone"><b>Num de téléphone</b></label>
+          <label for="numtele"><b>Num de téléphone</b></label>
           <input type="text" placeholder="Num de téléphone" name="text" required>
           
       
@@ -133,6 +133,7 @@
             <button type="submit" class="signupbtn">Réserver</button>
           </div>
         </div>
+        
       </form>
 </section>  
 
