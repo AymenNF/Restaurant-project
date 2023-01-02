@@ -1,48 +1,39 @@
-const express =require('express')
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const { Client } = require('pg');
+var path = require('path')
 
-const bodyParser =require('body-parser')
-const { request, response } = require('express')
-const app =express()
-const port =3000
-const path=require('path');
-const publicPath=path.join(__dirname,"C:\Users\P15S 1\Desktop\restaurant")
-app.use(express.static(publicPath));
+const client = new Client({
+  host: 'localhost',
+  user: 'postgres',
+  password: 'OUSSAMA2003',
+  database: 'postgres'
+});
 
+client.connect();
 
-app.use(bodyParser.json())
-const Pool =require('pg').Pool
-const pool = new Pool({
-    host: "localhost",
-    user: "postgres",
-    port: 5432,
-    password: "OUSSAMA2003",
-    database: "RESTAURANT"
-}) 
+// Parse form data
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname + '/public'));
+app.get('/', (request, response) => {
+  response.sendFile(__dirname + '/index.html');
+});
 
-app.use(
-    bodyParser.urlencoded({
-        extended: true,
-    })
+app.post('/insert', (request, response) => {
+  // Read the form data from the request body
+  const data = request.body;
 
-)
-/*app.post('/RESTAURANT',db.tnames)*/ 
-app.post('/process-form', (req, res) => {
-    const {nom,numtele}=req.body
-    pool.query('INSERT INTO reservation SET?',{nom:nom,numtele:numtele}, (error,results) =>{
-        if (error) {
-            throw error
-        }
-        else {
-          return res.render('register', {
-              message: 'User registered!'
-          })
-      }
-    })
-  })
- 
- app.use(express.urlencoded({extended: 'false'}))
-app.use(express.json())
- 
+  // Insert the data into the database
+  client.query('INSERT INTO res (name, numtel) VALUES ($1, $2)', [data.name, data.numtel], (error, results) => {
+    if (error) {
+      throw error;
+    }
+    console.log(results);
+  });
+
+  // Send a response to the client
+  response.send('Data inserted successfully');
+});
+
 app.listen(3000);
-
-

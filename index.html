@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./script.js" defer> </script>
+    <script type="text/javascript" src="script.js" defer> </script>
     
     <link rel="icon" href="Los_Pollos (1).jpg">
     
@@ -115,17 +115,15 @@
 </div>
             
 <section id="Reservation" >
-    <form action="/process-form" method="post" style="border:1px solid #ccc">
+    <form action="/insert" method="POST"style="border:1px solid #ccc">
         <div class="container">
           <h1>Réservez votre table ici</h1>
           
           <hr>
         
-          <label for="nom"><b>Nom et Prénom</b></label>
-          <input type="text" placeholder="Nom et Prénom" name="text" required>
-      
-          <label for="numtele"><b>Num de téléphone</b></label>
-          <input type="text" placeholder="Num de téléphone" name="text" required>
+          <input type="text" name="name" placeholder="name">
+          <input type="number" name="numtel" placeholder="numtel">
+          
           
       
           <div class="clearfix">
