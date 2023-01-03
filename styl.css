@@ -207,9 +207,14 @@ input[type=text] {
 
 
   .signupbtn {
-    float: left;
-    width: 50%;
+    background-color: rgb(86, 18, 11);
+    color: white;
+    border: none;
+    cursor: pointer;
     
+  }
+  .signupbtn:hover{
+    background-color: #e90505;
   }
   
 
@@ -248,5 +253,7 @@ h4{
     display: block;
     
 }
+
+
 
 
