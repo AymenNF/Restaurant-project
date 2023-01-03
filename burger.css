@@ -12,6 +12,7 @@
     box-shadow: inset -15px 0 #c15711;
     margin: 2% auto;
     position: relative;
+    display: none;
   }
   
   
@@ -21,9 +22,11 @@
     background: linear-gradient(#228c1d, #91ce50);
     margin: 2% auto;
     border-radius: 20px;
+    display: none;
   }
   
   #tomato {
+    display: none;
     width: 80%;
     height: 5%;
     background: linear-gradient(red,rgb(176, 5, 5));
@@ -32,6 +35,7 @@
   }
   
   #cheese {
+    display: none;
     width: 91%;
     height: 4.5%;
     background: linear-gradient(#f4d004, #d6bb22);
@@ -40,6 +44,7 @@
   }
   
   #meat {
+    display: none;
     width: 82%;
     height: 8%;
     background: linear-gradient(#7f3608, #702e05);
@@ -48,6 +53,7 @@
   }
   
   #bread-bottom {
+    display: none;
     height: 13%;
     width: 80%;
     background: linear-gradient(#f08e4a, #e27b36);
@@ -57,17 +63,85 @@
   }
 
   #buttons{
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  width: 300px;
-  border-radius: 30px;
+    position: fixed;
+    top: 70px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
   }
 
   #mot{
   position: fixed;
-  top: 50px;
-  left: 100px;
+  top: 10px;
+  left: 50px;
   width: 300px;
 
   }
+
+ 
+.bread-top {
+  border-color: #e0b62c;
+  color: rgb(225, 175, 73);
+}
+
+.bread-top:hover {
+  background-color: #d6c134;
+  color: white;
+}
+
+
+.salade {
+  border-color: #3ac867;
+  color: rgb(58, 214, 100);
+}
+
+.salade:hover {
+  background: #36de49;
+  color: white;
+}
+
+
+.meat{
+  border-color: #ff9800;
+  color: orange;
+}
+
+.meat:hover {
+  background: #ff9800;
+  color: white;
+}
+
+
+.cheese {
+  border-color: #e8d126;
+  color: rgb(222, 237, 21);
+}
+
+.cheese:hover {
+  background: #e4d227;
+  color: white;
+}
+
+
+.tomato {
+  border-color: #d75050;
+  color: rgb(156, 54, 54);
+}
+
+.tomato:hover {
+  background: #e7e7e7;
+}
+
+.bread-bottom {
+  border-color: #e0b62c;
+  color: rgb(225, 175, 73);
+}
+
+.bread-bottom:hover {
+  background-color: #d6c134;
+  color: white;
+}
