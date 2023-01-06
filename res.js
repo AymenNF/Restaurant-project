@@ -20,7 +20,7 @@ app.get('/', (request, response) => {
   response.sendFile(__dirname + '/index.html');
 });
 
-app.post('/insert', (request, response) => {
+/*app.post('/insert', (request, response) => {
   // Read the form data from the request body
   const data = request.body;
 
@@ -30,10 +30,43 @@ app.post('/insert', (request, response) => {
       throw error;
     }
     console.log(results);
-  });
+  }); 
+  
 
   // Send a response to the client
   response.send('Data inserted successfully');
+}); */
+
+
+app.post('/insert', (request, response) => {
+  const data = request.body;
+
+  client.query('SELECT * FROM res WHERE numtel = $1', [data.numtel], (error, result) => {
+    if (error) {
+      // Handle the error
+      return;
+    }
+
+    if (result.rows.length > 0) {
+      // A user with this email address is already registered
+      response.sendFile(__dirname + '/reserver.html');
+    } else {
+      // The email address is not registered, so we can register the user
+      // ...
+      client.query('INSERT INTO res (name, numtel) VALUES ($1, $2)', [data.name, data.numtel], (error, results) => {
+        if (error) {
+          throw error;
+        }
+        console.log(results);
+      }); 
+      response.sendFile(__dirname + '/reser.html');
+    }
+  });
 });
+
+
+
+
+
 
 app.listen(3000);
